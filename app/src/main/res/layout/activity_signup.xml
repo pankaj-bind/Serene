@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".SignupActivity"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="18dp"
     android:background="@drawable/loginbackground">
-<ImageView
-    android:layout_width="150dp"
-    android:layout_height="50dp"
-    android:src="@drawable/logo3" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo3" />
     <TextView
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log into your Serene account"
+        android:text="Create an account to save your progress"
         android:textColor="@color/splashTextColor"
         android:textSize="20sp"
         tools:ignore="HardcodedText" />
@@ -26,13 +26,26 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingStart="11dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/splashTextColor"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="12dp"
+        android:background="@drawable/inputvaluebackground"/>
+    <EditText
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="11dp"
         android:hint="Email"
         android:id="@+id/username"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/splashTextColor"
         android:drawableLeft="@drawable/message"
         android:drawablePadding="12dp"
-        android:inputType="textEmailAddress"
         android:background="@drawable/inputvaluebackground"/>
     <EditText
         android:layout_marginTop="14dp"
@@ -41,27 +54,28 @@
         android:paddingStart="11dp"
         android:hint="Password"
         android:id="@+id/password"
-        android:textSize="15sp"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/splashTextColor"
         android:drawableLeft="@drawable/key"
         android:drawablePadding="12dp"
-        android:inputType="textPassword"
         android:background="@drawable/inputvaluebackground"/>
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
         android:visibility="gone"/>
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginbtn"
         android:layout_marginTop="14dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Login"
+        android:text="Signup"
+        android:id="@+id/signupbtn"
         android:textColor="@color/splashTextColor"
         android:background="@drawable/loginbutton"
         android:textSize="15sp"/>
+
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
@@ -71,26 +85,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/splashTextColor"
             android:textSize="15sp"
-            android:text="Forgot password?"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Click here"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:textColor="@color/splashTextColor"
-            android:onClick="ForgetPassword"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/splashTextColor"
-            android:textSize="15sp"
-            android:text="Your use of Serene is subject to our "/>
+            android:text="By clicking Signup, you agree to our "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,8 +99,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/splashTextColor"
             android:textSize="15sp"
-
             android:text=" and"/>
+
 
     </LinearLayout>
     <TextView
@@ -117,6 +112,12 @@
         android:textStyle="bold"
         android:textColor="@color/splashTextColor"
         android:onClick="PrivacyPolicy"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/splashTextColor"
+        android:textSize="15sp"
+        android:text="which explains how to opt out of offers and promos."/>
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -127,15 +128,16 @@
             android:layout_height="wrap_content"
             android:textColor="@color/splashTextColor"
             android:textSize="17sp"
-            android:text="Need an account?"/>
+            android:text="Have an account?"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Sign up"
-            android:id="@+id/signupbtn"
+            android:text=" Log in"
+            android:id="@+id/loginNow"
             android:textStyle="bold"
             android:textSize="17sp"
             android:textColor="@color/splashTextColor"
-            android:onClick="Signup"/>
+            android:onClick="Login" />
     </LinearLayout>
+
 </LinearLayout>

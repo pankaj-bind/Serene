@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.serene" />
+                  <option name="mobileSdkAppId" value="1:43560310343:android:e43299848d3441cde68362" />
+                  <option name="projectId" value="serene-72a66" />
+                  <option name="projectNumber" value="43560310343" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

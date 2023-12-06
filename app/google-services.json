@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "43560310343",
+    "project_id": "serene-72a66",
+    "storage_bucket": "serene-72a66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43560310343:android:e43299848d3441cde68362",
+        "android_client_info": {
+          "package_name": "com.example.serene"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_h8KhzRwyNFily480w-a1XUIsVteYxvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
