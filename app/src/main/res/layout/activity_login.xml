@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/loginbackground">
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:src="@drawable/logo3" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log into your Serene account"
+        android:textColor="@color/splashTextColor"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:layout_marginTop="46dp"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:paddingStart="11dp"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/splashTextColor"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="12dp"
+        android:background="@drawable/inputvaluebackground"/>
+    <EditText
+        android:layout_marginTop="14dp"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:paddingStart="11dp"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/splashTextColor"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="12dp"
+        android:background="@drawable/inputvaluebackground"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="14dp"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textColor="@color/splashTextColor"
+        android:background="@drawable/loginbutton"
+        android:textSize="15sp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="15sp"
+            android:text="Forgot password?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Click here"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/splashTextColor"
+            android:onClick="ForgetPassword"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="15sp"
+            android:text="Your use of Seren is subject to our "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms"
+            android:textSize="15sp"
+            android:textColor="@color/splashTextColor"
+            android:textStyle="bold"
+            android:onClick="Terms"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="15sp"
+
+            android:text=" and"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text=" Privacy Policy"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/splashTextColor"
+        android:onClick="PrivacyPolicy"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="17sp"
+            android:text="Need an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign up"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/splashTextColor"
+            android:onClick="Signup"/>
+    </LinearLayout>
+</LinearLayout>
