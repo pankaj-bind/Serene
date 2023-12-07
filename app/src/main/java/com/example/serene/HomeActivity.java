@@ -87,11 +87,11 @@ public class HomeActivity extends AppCompatActivity {
         String greeting;
 
         if (hour >= 0 && hour < 12) {
-            greeting = "Good Morning";
+            greeting = "Good Morning, Pankaj";
         } else if (hour >= 12 && hour < 18) {
-            greeting = "Good Afternoon";
+            greeting = "Good Afternoon, Pankaj";
         } else {
-            greeting = "Good Night";
+            greeting = "Good Night, Pankaj";
         }
 
         // Set the greeting in the TextView

@@ -25,7 +25,7 @@
             android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:textStyle="bold"
-            android:text="Embrace the tranquility within chaos through mindfulness and meditation. In the stillness of the present moment, find the profound wisdom that resides within."/>
+            android:text="Embrace the tranquility within chaos through mindfulness and meditation. In the stillness of the present moment, find the profound wisdom that resides within.\n\n"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,6 +34,13 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:id="@+id/wishme"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended for You"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
