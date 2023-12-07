@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeditationActivity"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:background="#164570"
+            android:drawableLeft="@drawable/left_arrow"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="15dp"
+            android:layout_height="50dp"
+            android:textColor="@color/splashTextColor"
+            android:background="#164570"
+            android:textSize="25dp"
+            android:text="Meditation"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Wrap all LinearLayout items in a parent vertical LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First content item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Mindfulness Meditation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="This kind of meditation trains you to focus on what you are thinking or feeling at the moment. You can concentrate on your thoughts, feelings, or sensations."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m2"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Loving-Kindness Meditation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="One of the most prominent
+meditation styles, this type
+allows you to focus your
+energy to feel the warmth of
+love, kindness, and other
+positive feelings"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m3"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Transcendental Meditation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="This meditation technique
+promotes a state of relaxation
+by helping you avoid
+distracting thoughts and
+feelings."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m4"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Zen Meditation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Zen meditation is the practice
+of preparing your body and
+mind to be calm in order to
+open yourself up to exploring
+the nature of your being."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m5"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Kundalini Yoga"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="The goal of Kundalini yoga is to
+increase a person's vitality and
+consciousness. This practice is
+a mixture of physical and
+spiritual meditation, using a
+combination of dynamic
+movement, breathing, focus,
+and mantra chanting."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/m6"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Spiritual Meditation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="This type of meditation allows
+your inner self to connect to
+something deeper than your
+being. It lets you reflect on
+your own dealings until you
+become fully aware of your
+spiritual being."/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

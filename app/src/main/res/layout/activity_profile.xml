@@ -5,20 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
-    android:gravity="center"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:padding="18dp"
     android:background="@drawable/loginbackground">
 
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal">
+       <TextView
+           android:id="@+id/back"
+           android:onClick="back"
+           android:layout_width="35dp"
+           android:layout_height="50dp"
+           android:background="#164570"
+           android:drawableLeft="@drawable/left_arrow"
+           android:paddingTop="15dp"
+           android:paddingBottom="15dp" />
+       <TextView
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:paddingTop="3dp"
+           android:paddingBottom="15dp"
+           android:layout_height="50dp"
+           android:textColor="@color/splashTextColor"
+           android:background="#164570"
+           android:textSize="25dp"
+           android:text="Profile"/>
+
+   </LinearLayout>
+
+
+
+
+    <!-- profile-->
+
     <TextView
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|left"
+        android:paddingStart="11dp"
+        android:text=""
+        android:textSize="20sp"
         android:id="@+id/user_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello world"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/splashTextColor"
+        android:drawableLeft="@drawable/message"
+        android:drawablePadding="12dp"
+        android:background="@drawable/inputvaluebackground"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/inputvaluebackground"
+        android:textColor="@color/splashTextColor"
         android:id="@+id/logout"
         android:text="Logout"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="15sp"
+            android:text="By clicking Signup, you agree to our "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms"
+            android:textSize="15sp"
+            android:textColor="@color/splashTextColor"
+            android:textStyle="bold"
+            android:onClick="Terms"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splashTextColor"
+            android:textSize="15sp"
+            android:text=" and"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text=" Privacy Policy"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/splashTextColor"
+        android:onClick="PrivacyPolicy"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/splashTextColor"
+        android:textSize="15sp"
+        android:text="which explains how to opt out of offers and promos."/>
+
 
 </LinearLayout>

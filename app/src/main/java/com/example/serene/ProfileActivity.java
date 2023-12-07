@@ -18,7 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
     FirebaseAuth auth;
     Button logout;
     FirebaseUser user;
-    TextView textView;
+    TextView textView, back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,17 @@ public class ProfileActivity extends AppCompatActivity {
         logout = findViewById(R.id.logout);
         user = auth.getCurrentUser();
         textView = findViewById(R.id.user_details);
+
+        back = findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         if(user == null){
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
@@ -48,4 +59,6 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepActivity"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:background="#164570"
+            android:drawableLeft="@drawable/left_arrow"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="15dp"
+            android:layout_height="50dp"
+            android:textColor="@color/splashTextColor"
+            android:background="#164570"
+            android:textSize="25sp"
+            android:text="Sleep"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Wrap all LinearLayout items in a parent vertical LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First content item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Take time to relax"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Unwind with a good book, a warm bath, or soothing music before bed. Reduce stress and enhance sleep quality for better overall well-being."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s2"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Get into a routine"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Establish a consistent bedtime routine to regulate your sleep-wake cycle. Cultivate healthy sleep habits for improved rest and overall health."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s3"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Avoid technology"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Eliminate devices emitting blue light from the bedroom. A technology-free hour before bedtime promotes the release of sleep-inducing melatonin."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s4"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Create a restful environment"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Ensure a comfortable bed, optimal room temperature, and a serene atmosphere with calming colors and pleasant scents for a restful sleep."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s5"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Don't clock watch"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Resist the urge to constantly check the clock. Instead, focus on calming thoughts to promote relaxation and a more productive sleep experience."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s6"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Foods for sleeping"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Include tryptophan and serotonin-rich foods like milk, turkey, and pumpkin seeds in your diet to enhance melatonin production and promote better sleep."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s7"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Foods to avoid"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Steer clear of caffeine, spicy food, alcohol, and large meals close to bedtime to minimize disruptions and support a restful night's sleep."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/s8"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Darkness promotes sleep"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Dim the lights or invest in blackout blinds to create a darkened environment, aiding the body's natural sleep-wake cycle and promoting better sleep."/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
