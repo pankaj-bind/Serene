@@ -15,6 +15,27 @@
         android:theme="@style/Theme.Serene"
         tools:targetApi="31">
         <activity
+            android:name=".BreathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Updates"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".RelaxationSounds"
+            android:exported="false" />
+        <activity
+            android:name=".BreathingTechniques"
+            android:exported="false" />
+        <activity
+            android:name=".GuidedMeditationSessions"
+            android:exported="false" />
+        <activity
             android:name=".MeditationActivity"
             android:exported="false" />
         <activity

@@ -19,7 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.Calendar;
 
 public class HomeActivity extends AppCompatActivity {
-    ImageButton profile, home, sleep, meditation;
+    ImageButton profile, home, sleep, meditation, breath;
     TextView wishMeTextView;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         sleep = findViewById(R.id.sleep);
         meditation = findViewById(R.id.meditation);
         profile = findViewById(R.id.profile);
+        breath = findViewById(R.id.breath);
 
         wishMeTextView = findViewById(R.id.wishme);
 
@@ -50,6 +51,15 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SleepActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        breath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BreathActivity.class);
                 startActivity(intent);
                 finish();
             }

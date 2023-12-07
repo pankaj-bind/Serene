@@ -3,7 +3,9 @@ package com.example.serene;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,7 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     Button signupbtn;
     ProgressBar progressBar;
     FirebaseAuth mAuth;
-    TextView  textView;
+    TextView  textView, terms;
 
     @Override
     public void onStart() {
@@ -38,6 +40,7 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +53,21 @@ public class SignupActivity extends AppCompatActivity {
         signupbtn = findViewById(R.id.signupbtn);
         progressBar = findViewById(R.id.progressBar);
         textView = findViewById(R.id.loginNow);
+        terms = findViewById(R.id.terms);
 
+        terms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Define the URL to redirect to
+                String url = "https://github.com/Pankaj-Bind/Serene/blob/main/terms.html";
+
+                // Create an Intent to open the URL in a browser
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                // Start the activity with the Intent
+                startActivity(intent);
+            }
+        });
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

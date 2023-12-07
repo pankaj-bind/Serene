@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreathActivity"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:background="#164570"
+            android:drawableLeft="@drawable/left_arrow"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="15dp"
+            android:layout_height="50dp"
+            android:textColor="@color/splashTextColor"
+            android:background="#164570"
+            android:textSize="25dp"
+            android:text="Breathing Techniques"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Wrap all LinearLayout items in a parent vertical LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First content item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Pursed Lip Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Inhale slowly through your nose for 2 counts. Pucker your lips. Exhale through pursed lips for a count of 4. Relax neck and shoulders."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b2"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Diaphragmatic Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Lie on your back, knees bent. Inhale through your nose, feel stomach rise. Exhale through pursed lips, tighten abdominal muscles."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b3"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Breath Focus Technique"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Sit comfortably, focus on breath. Alternate between normal and deep breaths. Inhale peace, exhale tension. Practice for 10-20 minutes."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b4"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Lion’s Breath"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Inhale deeply, eyes wide. Open mouth, stick out tongue, exhale with a 'haaa' sound. Repeat 2-3 times for chest and face tension relief."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b5"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Alternate Nostril Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Sit comfortably, use right hand to alternate nostrils. Inhale left, exhale right. Enhances cardiovascular function, lowers heart rate."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b6"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Equal Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Sit comfortably, inhale/exhale through nose. Make inhales and exhales even. Practice for 5 minutes to improve mental well-being."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b7"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Resonant Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Breathe at a rate of 5 breaths per minute. Inhale for 5, exhale for 5. Maximizes heart rate variability, reduces stress."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b8"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Sitali Breath"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Inhale through curled tongue or pursed lips, exhale through nose. Lowers body temperature, relaxes mind. Practice for up to 5 minutes."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b9"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Deep Breathing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Stand or sit, draw elbows back. Inhale deeply through nose, retain breath for 5 counts, exhale slowly. Relieves shortness of breath."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:background="@drawable/inputvaluebackground">
+
+                <!-- Content for the first item -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/b10"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Humming Bee Breath (Bhramari)"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/splashTextColor"
+                        android:text="Sit comfortably, close eyes, place fingers on ears. Inhale, press fingers, hum loudly. Relieves frustration, anxiety. Practice freely."/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

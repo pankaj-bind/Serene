@@ -1,6 +1,8 @@
 package com.example.serene;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,8 +26,9 @@ public class LoginActivity extends AppCompatActivity {
     Button loginbtn;
     ProgressBar progressBar;
     FirebaseAuth mAuth;
-    TextView textView;
+    TextView textView, terms;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,23 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn = findViewById(R.id.loginbtn);
         progressBar = findViewById(R.id.progressBar);
         textView = findViewById(R.id.signupbtn);
+        terms = findViewById(R.id.terms);
+
+        terms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Define the URL to redirect to
+                String url = "https://github.com/Pankaj-Bind/Serene/blob/main/terms.html";
+
+                // Create an Intent to open the URL in a browser
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                // Start the activity with the Intent
+                startActivity(intent);
+            }
+        });
+
+
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {

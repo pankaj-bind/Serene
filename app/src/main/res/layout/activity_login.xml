@@ -92,13 +92,14 @@
             android:textSize="15sp"
             android:text="Your use of Serene is subject to our "/>
         <TextView
+            android:id="@+id/terms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Terms"
             android:textSize="15sp"
             android:textColor="@color/splashTextColor"
             android:textStyle="bold"
-            android:onClick="Terms"/>
+            android:onClick="terms"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -23,6 +23,7 @@
            android:drawableLeft="@drawable/left_arrow"
            android:paddingTop="15dp"
            android:paddingBottom="15dp" />
+
        <TextView
            android:gravity="center"
            android:layout_width="match_parent"
@@ -33,6 +34,7 @@
            android:background="#164570"
            android:textSize="25dp"
            android:text="Profile"/>
+
 
    </LinearLayout>
 
@@ -65,8 +67,19 @@
         android:layout_height="60dp"
         android:background="@drawable/inputvaluebackground"
         android:textColor="@color/splashTextColor"
+        android:id="@+id/update"
+        android:text="Check for Update"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/inputvaluebackground"
+        android:textColor="@color/splashTextColor"
         android:id="@+id/logout"
         android:text="Logout"/>
+
+
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -79,6 +92,7 @@
             android:textSize="15sp"
             android:text="By clicking Signup, you agree to our "/>
         <TextView
+            android:id="@+id/terms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Terms"

@@ -87,6 +87,7 @@
             android:textSize="15sp"
             android:text="By clicking Signup, you agree to our "/>
         <TextView
+            android:id="@+id/terms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Terms"

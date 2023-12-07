@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_marginBottom="5dp"
+            android:textStyle="bold"
             android:text="Embrace the tranquility within chaos through mindfulness and meditation. In the stillness of the present moment, find the profound wisdom that resides within."/>
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +53,7 @@
                     android:gravity="left">
                     <androidx.cardview.widget.CardView
                         android:layout_width="313dp"
-                        android:layout_height="250dp"
+                        android:layout_height="150dp"
                         android:layout_centerInParent="true"
                         app:cardCornerRadius="16dp">
 
@@ -100,7 +101,7 @@
                     android:gravity="left">
                     <androidx.cardview.widget.CardView
                         android:layout_width="313dp"
-                        android:layout_height="250dp"
+                        android:layout_height="150dp"
                         android:layout_centerInParent="true"
                         app:cardCornerRadius="16dp">
 
@@ -148,7 +149,7 @@
                     android:gravity="left">
                     <androidx.cardview.widget.CardView
                         android:layout_width="313dp"
-                        android:layout_height="250dp"
+                        android:layout_height="150dp"
                         android:layout_centerInParent="true"
                         app:cardCornerRadius="16dp">
 
@@ -254,6 +255,31 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/splashTextColor"
                     android:text="Sleep"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:id="@+id/breath"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/darkBlue"
+                    android:scaleType="fitCenter"
+                    android:onClick="breath"
+                    android:src="@drawable/lungs" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/splashTextColor"
+                    android:text="Breath"
                     android:textStyle="bold"/>
             </LinearLayout>
 
